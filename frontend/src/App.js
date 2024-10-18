@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import { useState } from 'react';
 import RefrshHandler from './RefrshHandler';
 
+
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div className="App">
+      
       <RefrshHandler setIsAuthenticated={setIsAuthenticated} />
       <Routes>
         <Route path='/' element={<Navigate to="/login" />} />
